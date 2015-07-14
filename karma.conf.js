@@ -12,9 +12,11 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
+      'node_modules/phantomjs-polyfill/bind-polyfill.js',
       'vendor/angular/angular.min.js',
       'vendor/angular-mocks/angular-mocks.js',
       'app/**/*.js',
+      'spec/mockUtil.js',
       'spec/**/*.spec.js'
     ],
 
