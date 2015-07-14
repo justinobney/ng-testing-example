@@ -1,4 +1,4 @@
-describe('Controller Spec', function() {
+describe('The Controller Test Suite', function() {
   var $controller;
   var $rootScope;
   var ctrl;
@@ -24,12 +24,6 @@ describe('Controller Spec', function() {
 
     expect(locals.testService.getThings).toHaveBeenCalled();
   });
-
-  function setupSpies(obj){
-    Object.keys(obj).forEach(function(key){
-      spyOn(obj, key).and.callThrough();
-    })
-  }
 });
 
 function testServiceFake(){
@@ -38,4 +32,10 @@ function testServiceFake(){
   svc.getThings = getThings;
 
   function getThings(){}
+}
+
+function setupSpies(obj){
+  Object.keys(obj).forEach(function(key){
+    spyOn(obj, key).and.callThrough();
+  })
 }

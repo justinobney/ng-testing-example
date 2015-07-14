@@ -1,6 +1,6 @@
 /* globals angular */
 
-angular.module('test', [])
+angular.module('test.service', [])
   .service('testService', testService);
 
 function testService($http){

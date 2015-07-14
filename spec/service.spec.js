@@ -1,9 +1,9 @@
-describe('The Module Spec', function() {
+describe('The Service Test Suite', function() {
   var $httpBackend;
   var testService;
 
   beforeEach(function(){
-    module('test');
+    module('test.service');
 
     inject(function(_$httpBackend_, _testService_){
       $httpBackend = _$httpBackend_;
