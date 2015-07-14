@@ -1,0 +1,21 @@
+{
+  "name": "ng-test",
+  "version": "0.0.0",
+  "authors": [
+    "Justin Obney <justinobney@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-mocks": "~1.4.2",
+    "bootstrap": "~3.3.5",
+    "angular": "~1.4.2"
+  }
+}
