@@ -8,9 +8,13 @@ function testController(testService){
 
   vm.things = [];
 
-  init();
+  vm.init = init;
 
   function init(){
-    testService.getThings();
+    testService.getThings().then(onSuccess);
+
+    function onSuccess(resp){
+      angular.copy(resp, vm.things);
+    }
   }
 }
